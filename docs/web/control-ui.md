@@ -156,6 +156,12 @@ The sidebar keeps sessions first, followed by a small pinned destination set. **
     - Structured SecretRef object values render read-only in form text inputs, to prevent accidental object-to-string corruption.
 
   </Accordion>
+  <Accordion title="Usage">
+    - Session-derived token and estimated-cost analysis stays separate from provider billing.
+    - Provider cards call `usage.status` and show live plan names, quota windows, balances, spend, and budgets reported by configured provider plugins.
+    - A provider usage failure does not block the session/cost dashboard; unavailable provider cards show their own error state.
+
+  </Accordion>
   <Accordion title="Debug, logs, update">
     - Debug: status/health/models snapshots, event log, and manual RPC calls (`status`, `health`, `models.list`).
     - The event log includes Control UI refresh/RPC timings, slow chat/config render timings, and browser responsiveness entries for long animation frames or long tasks when the browser exposes those PerformanceObserver entry types.
