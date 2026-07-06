@@ -1,4 +1,4 @@
----
+Hindi---
 summary: "OpenClaw browser control API, CLI reference, and scripting actions"
 read_when:
   - Scripting or debugging the agent browser via the local control API
